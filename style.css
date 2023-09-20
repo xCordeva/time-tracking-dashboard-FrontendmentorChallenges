@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Overpass:wght@200&family=Rubik:wght@300&family=Space+Mono&display=swap');
+
+*{
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    background-color: hsl(226, 43%, 10%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+p{
+    font-size: 18px;
+}
+
+.containers{
+    display: flex;
+}
+
+.profile{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.profile .first-half{
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-start;
+    padding: 20px; /* Equivalent to p-5 */
+    flex-direction: column;
+    
+}
+.first-half h1{
+    color: white;
+    margin-bottom: 50px;
+}
+.break{
+    display: block;
+}
+.profile .first-half p{
+    color: hsl(236, 100%, 87%);
+    padding: 30px 0 0 0;
+}
+
+.profile .second-half{
+    display: flex;
+    padding: 20px; 
+    flex-direction: column;
+}
+
+.profile .second-half a{
+    font-size: 23px;
+    color: hsl(235, 45%, 61%);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 20px 0;
+}
+.profile .second-half .choosen-timeframe{
+    color: white;
+}
+
+.profile .second-half a:hover{
+    color: hsl(0, 0%, 100%);
+    transition: 1s;
+}
+
+.profile img{
+    border: 5px solid white;
+    border-radius: 100%;
+    width: 30%;
+}
+
+.time-tracker{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.time-tracker .cards{
+    display: flex;   
+    flex-direction: column;
+    color: white;
+    border-radius: 35px;
+    height: 100%;
+}
+.cards-bg{
+    height: 10%;
+}
+.cards img{
+    float: right;
+    padding-right: 20px;
+}
+.cards-content{
+    background-color: hsl(235, 46%, 20%);
+    padding:0 20px;
+    border-radius: 30px;
+    height: 90%;
+}
+.cards-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.cards .cards-header h4{
+    margin-right: 70px;
+    font-weight: 500;
+}
+.cards h1{
+    font-weight: 500;
+    font-size: 3em;
+}
+
+.cards p{
+    font-weight: 300;
+    color: hsl(236, 100%, 87%);
+}
+.cards-header img{
+    margin-left: 50px;
+}
+
+.work{
+    background-color: hsl(15, 100%, 70%);
+}
+.play{
+    background-color: hsl(195, 74%, 62%);
+}
+
+.study{
+    background-color: hsl(348, 100%, 68%);
+}
+.exercise{
+    background-color: hsl(145, 58%, 55%);
+}
+
+.social{
+    background-color: hsl(264, 64%, 52%);
+}
+.self-care{
+    background-color: hsl(43, 84%, 65%);
+}
+
+@media (max-width:1050px){
+    .time-tracker{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:750px){
+    .containers{
+        padding-top: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90%;
+    }
+    .profile{
+        margin-bottom: 30px;
+        width: 90%;
+    }
+    .break{
+        display: none;
+    }
+    .profile .first-half{
+        align-items: center;
+        padding:0 0;
+        flex-direction: row;
+    }
+    .profile .first-half img{
+        width: 20%;
+        margin: 20px;
+    }
+    .profile .first-half .first-half-header{
+        margin-left: 50px;
+    }
+    .profile .second-half{
+        flex-direction: row;
+        justify-content: space-around;        
+    }
+    .time-tracker{
+        margin: 0;
+        width: 90%;
+    }
+    .cards-bg{
+        height: 15%;
+    }
+}
+
+@media (max-width:675px){
+    .containers{
+        width: 100%;
+    }
+    
+    .profile{
+        margin-bottom: 0;
+        width: 90%;
+    }
+
+    .profile .first-half img{
+        margin: 20px;
+    }
+    .profile .first-half .first-half-header{
+        font-size: 10px;
+        margin-left: 20px;
+    }
+    .time-tracker{
+        grid-template-columns: 1fr ;
+        gap: 0px;
+    }
+    .time-tracker .times{
+        display: flex;   
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 35px;
+        align-items: center;
+        font-size: 0.75em;
+    }
+    .time-tracker .cards{
+        height: 80%;
+    }
+}
+
+
+.credit{
+    font-size: 11px;
+    text-align: center;
+    bottom: 0;
+    color: white;
+    margin-top: 10px;
+}
+.credit a{ 
+    color: hsl(0, 100%, 50%);
+    text-decoration: none;
+    font-weight: 1000;
+}
+.credit a:hover{ 
+    color: hsl(264, 64%, 52%);
+}

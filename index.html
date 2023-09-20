@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  
+</head>
+<body>
+
+    <div class="containers">
+
+      <div class="profile">
+
+        <div class="first-half">
+          <img src="./images/image-jeremy.png" alt="image-jeremy">
+          <div class="first-half-header">
+            <p>Report for</p>
+            <h1>Jeremy <span class="break"></span> Robson</h1>
+          </div>
+        </div>
+
+        <div class="second-half">
+          <a href="#" class="time-frame choosen-timeframe" data-timeframe="daily" >Daily</a>
+          <a href="#" class="time-frame" data-timeframe="weekly">Weekly</a>
+          <a href="#" class="time-frame" data-timeframe="monthly">Monthly</a>
+        </div>
+
+      </div>
+
+      <div class="time-tracker">
+
+        <div class="cards work">
+          <div class="cards-bg">
+            <img src="./images/icon-work.svg" alt="">
+          </div>
+          <div class="cards-content">
+            <div class="cards-header">
+              <h4 class="card-title" id="Work"></h4>
+              <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+            </div>
+            <div class="times">
+              <h1 class="card-current" id="Work"></h1>
+              <p class="card-previous" id="Work"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards play">
+          <div class="cards-bg">
+            <img src="./images/icon-play.svg" alt="">
+          </div>
+          <div class="cards-content">
+            <div class="cards-header">
+              <h4 class="card-title" id="Play"></h4>
+              <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+            </div>
+            <div class="times">
+              <h1 class="card-current" id="Play"></h1>
+              <p class="card-previous" id="Play"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards study">
+          <div class="cards-bg">
+            <img src="./images/icon-study.svg" alt="">
+          </div>
+          <div class="cards-content">
+            <div class="cards-header">
+              <h4 class="card-title" id="Study"></h4>
+              <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+            </div>
+            <div class="times">
+              <h1 class="card-current" id="Study"></h1>
+              <p class="card-previous" id="Study"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards exercise">
+          <div class="cards-bg">
+            <img src="./images/icon-exercise.svg" alt="">
+          </div>
+          <div class="cards-content">
+            <div class="cards-header">
+              <h4 class="card-title" id="Exercise"></h4>
+              <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+            </div>
+            <div class="times">
+              <h1 class="card-current" id="Exercise"></h1>
+              <p class="card-previous" id="Exercise"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards social">
+          <div class="cards-bg">
+            <img src="./images/icon-social.svg" alt="">
+          </div>
+          <div class="cards-content">
+            <div class="cards-header">
+              <h4 class="card-title" id="Social"></h4>
+              <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+            </div>
+            <div class="times">
+              <h1 class="card-current" id="Social"></h1>
+              <p class="card-previous" id="Social"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards self-care">
+          <div class="cards-bg">
+            <img src="./images/icon-self-care.svg" alt="">
+          </div>
+          <div class="cards-content">
+            <div class="cards-header">
+              <h4 class="card-title" id="Self Care"></h4>
+              <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+            </div>
+            <div class="times">
+              <h1 class="card-current" id="Self Care"></h1>
+              <p class="card-previous" id="Self Care"></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  <div class="credit">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/xCordeva">Cordeva</a>.
+  </div> 
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

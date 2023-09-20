@@ -57,6 +57,6 @@ This project allowed me to further develop my skills in responsive web design an
 
 
 ## Demo 
-You can check out a live demo of this website [here](https://xcordeva.github.io/FrontEndMentor-Challenges/Time-Tracking-Dashboard/).
+You can check out a live demo of this website [here](https://xcordeva.github.io/time-tracking-dashboard-FrontendmentorChallenges).
 
 
